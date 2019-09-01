@@ -216,6 +216,16 @@ describe('Ingredient Parser', function(){
         unit: 'cup',
         prep: 'unbleached',
         name: 'all-purpose flour'
+      },
+      '1 tbsp apple cider vinegar': {
+        amount: '1',
+        unit: 'Tablespoon',
+        name: 'apple cider vinegar'
+      },
+      '1 tsp chili garlic paste  ($0.05)': {
+        amount: '1',
+        unit: 'Teaspoon',
+        name: 'chili garlic paste'
       }
     };
 
