@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/jdarling/ingredientparser",
   "devDependencies": {
-    "mocha": "^2.0.1"
+    "mocha": "^2.5.3"
   },
   "dependencies": {
     "i": "^0.3.2"

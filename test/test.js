@@ -204,8 +204,21 @@ describe('Ingredient Parser', function(){
         amount: '2',
         unit: 'Teaspoon',
         name: 'toasted sesame oil'
+      },
+      '1/4 cup chopped green onion': {
+        amount: '1/4',
+        unit: 'cup',
+        prep: 'chopped',
+        name: 'green onion'
+      },
+      '4 cups unbleached all-purpose flour': {
+        amount: '4',
+        unit: 'cup',
+        prep: 'unbleached',
+        name: 'all-purpose flour'
       }
     };
+
     Object.keys(testCases).forEach(function(name){
       var expect = testCases[name];
       it('Should parse '+name, function(done){
