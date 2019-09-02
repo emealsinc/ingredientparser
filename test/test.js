@@ -211,7 +211,48 @@ describe('Ingredient Parser', function(){
         unit: 'Cup',
         prep: 'chopped',
         name: 'green onion'
-      }
+      },
+      '2 tablespoons minced garlic': {
+        amount: '2',
+        unit: 'Tablespoon',
+        prep: 'minced',
+        name: 'garlic'
+      },
+      '1 cup (190g) dried green lentils': {
+        amount: '1',
+        unit: 'Cup',
+        prep: 'dried',
+        name: 'green lentils'
+      },
+      '1/2 cup grated Parmesan cheese': {
+        amount: '1/2',
+        unit: 'Cup',
+        prep: 'grated',
+        name: 'Parmesan cheese'
+      },
+      '1/2 cup frozen corn, thawed': {
+        amount: '1/2',
+        unit: 'Cup',
+        prep: 'thawed',
+        name: 'frozen corn'
+      },
+      '1.5 tbsp cider vinegar': {
+        amount: '1.5',
+        unit: 'Tablespoon',
+        name: 'cider vinegar'
+      },
+      '8 tablespoons unsalted butter, frozen': {
+        amount: '8',
+        unit: 'Tablespoon',
+        name: 'unsalted butter',
+        prep: 'frozen'
+      },
+      '1 pound shrimp, peeled and deveined': {
+        amount: '1',
+        unit: 'Pound',
+        name: 'shrimp',
+        prep: 'peeled and deveined'
+      },
       // '4 cups unbleached all-purpose flour': {
       //   amount: '4',
       //   unit: 'Cup',
@@ -223,11 +264,17 @@ describe('Ingredient Parser', function(){
       //   unit: 'Tablespoon',
       //   name: 'apple cider vinegar'
       // },
-      // '1 tsp chili garlic paste  ($0.05)': {
-      //   amount: '1',
-      //   unit: 'Teaspoon',
-      //   name: 'chili garlic paste'
-      // },
+      '1 tsp chili garlic paste  ($0.05)': {
+        amount: '1',
+        unit: 'Teaspoon',
+        name: 'chili garlic paste'
+      },
+      '1 (15.25 ounce) can whole kernel corn, drained': {
+        amount: '1',
+        unit: '15.25 ounce can',
+        prep: 'drained',
+        name: 'whole kernel corn'
+      }
       // '1/2 tsp cumin ($0.05)': {
       //   amount: '1/2',
       //   unit: 'Teaspoon',
