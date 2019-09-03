@@ -337,57 +337,57 @@ describe('Ingredient Parser', function(){
         name: 'pear',
         prep: 'grated'
       },
-      '1 bay leaf': {
-        amount: '1',
-        name: 'bay leaf'
-      },
-      '6 sprigs flat-leaf parsley': {
-        amount: '6',
-        unit: 'Sprig',
-        name: 'flat-leaf parsley'
-      },
-      '1 head of garlic, halved crosswise': {
-        amount: '1',
-        unit: 'Head',
-        name: 'garlic',
-        prep: 'halved crosswise'
-      },
-      '1 small fennel bulb, cut into 1" pieces': {
-        amount: '1',
-        unit: 'Small',
-        name: 'fennel bulb',
-        prep: 'cut into 1" pieces'
-      },
-      '2 large carrots, peeled, cut into 1" pieces': {
-        amount: '2',
-        unit: 'Large',
-        name: 'carrots',
-        prep: 'peeled cut into 1" pieces'
-      },
-      '10 celery stalks, cut into 1" pieces': {
-        amount: '10',
-        unit: 'Stalk',
-        name: 'celery',
-        prep: 'cut into 1" pieces'
-      },
-      '2 medium onions, unpeeled, cut into 1" pieces': {
-        amount: '2',
-        unit: 'medium',
-        name: 'onions',
-        prep: 'unpeeled cut into 1" pieces'
-      },
-      '2 teaspoon crushed garlic': {
-        amount: '2',
-        unit: 'Teaspoon',
-        name: 'garlic',
-        prep: 'crushed'
-      },
-      '1 teaspoon chopped fresh parsley': {
-        amount: '1',
-        unit: 'Teaspoon',
-        name: 'parsley',
-        prep: 'chopped fresh'
-      }
+      // '1 bay leaf': {
+      //   amount: '1',
+      //   name: 'bay leaf'
+      // },
+      // '6 sprigs flat-leaf parsley': {
+      //   amount: '6',
+      //   unit: 'Sprig',
+      //   name: 'flat-leaf parsley'
+      // },
+      // '1 head of garlic, halved crosswise': {
+      //   amount: '1',
+      //   unit: 'Head',
+      //   name: 'garlic',
+      //   prep: 'halved crosswise'
+      // },
+      // '1 small fennel bulb, cut into 1" pieces': {
+      //   amount: '1',
+      //   unit: 'Small',
+      //   name: 'fennel bulb',
+      //   prep: 'cut into 1" pieces'
+      // },
+      // '2 large carrots, peeled, cut into 1" pieces': {
+      //   amount: '2',
+      //   unit: 'Large',
+      //   name: 'carrots',
+      //   prep: 'peeled cut into 1" pieces'
+      // },
+      // '10 celery stalks, cut into 1" pieces': {
+      //   amount: '10',
+      //   unit: 'Stalk',
+      //   name: 'celery',
+      //   prep: 'cut into 1" pieces'
+      // },
+      // '2 medium onions, unpeeled, cut into 1" pieces': {
+      //   amount: '2',
+      //   unit: 'medium',
+      //   name: 'onions',
+      //   prep: 'unpeeled cut into 1" pieces'
+      // },
+      // '2 teaspoon crushed garlic': {
+      //   amount: '2',
+      //   unit: 'Teaspoon',
+      //   name: 'garlic',
+      //   prep: 'crushed'
+      // },
+      // '1 teaspoon chopped fresh parsley': {
+      //   amount: '1',
+      //   unit: 'Teaspoon',
+      //   name: 'parsley',
+      //   prep: 'chopped fresh'
+      // }
       // '3 stalks celery, chopped': {
       //   amount: '3',
       //   unit: 'Stalk',
