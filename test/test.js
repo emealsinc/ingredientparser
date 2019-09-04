@@ -218,6 +218,12 @@ describe('Ingredient Parser', function(){
         prep: 'minced',
         name: 'garlic'
       },
+      '1 (15.25 ounce) can whole kernel corn, drained': {
+        amount: '1',
+        unit: '15.25 ounce can',
+        prep: 'drained',
+        name: 'whole kernel corn'
+      },
       '1 cup (190g) dried green lentils': {
         amount: '1',
         unit: 'Cup',
@@ -291,12 +297,6 @@ describe('Ingredient Parser', function(){
         unit: 'Teaspoon',
         name: 'chili garlic paste'
       },
-      '1 (15.25 ounce) can whole kernel corn, drained': {
-        amount: '1',
-        unit: '15.25 ounce can',
-        prep: 'drained',
-        name: 'whole kernel corn'
-      },
       '1 pound flank steak, thinly sliced': {
         amount: '1',
         unit: 'Pound',
@@ -309,7 +309,8 @@ describe('Ingredient Parser', function(){
         name: 'plain yogurt'
       },
       'Sliced scallions (for serving)': {
-        name: 'sliced scallions'
+        prep: 'sliced',
+        name: 'scallions'
       },
       'Kosher salt': {
         name: 'Kosher salt'
@@ -369,10 +370,11 @@ describe('Ingredient Parser', function(){
         unit: 'Stalk',
         name: 'celery',
         prep: 'cut into 1" pieces'
-      },
+      }
+      ,
       '2 medium onions, unpeeled, cut into 1" pieces': {
         amount: '2',
-        unit: 'medium',
+        unit: 'Medium',
         name: 'onions',
         prep: 'unpeeled cut into 1" pieces'
       },
@@ -498,7 +500,8 @@ describe('Ingredient Parser', function(){
         unit: 'Small',
         name: 'onion',
         prep: 'diced'
-      },
+      }
+      ,
       '1 small bell pepper, diced': {
         amount: '1',
         unit: 'Small',
