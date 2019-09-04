@@ -370,8 +370,13 @@ describe('Ingredient Parser', function(){
         unit: 'Stalk',
         name: 'celery',
         prep: 'cut into 1" pieces'
-      }
-      ,
+      },
+      
+      '1/2 tsp salt ($0.02)': {
+        amount: '1/2',
+        unit: 'Teaspoon',
+        name: 'salt'
+      },
       '2 medium onions, unpeeled, cut into 1" pieces': {
         amount: '2',
         unit: 'Medium',
