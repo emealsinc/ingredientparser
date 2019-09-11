@@ -609,7 +609,7 @@ describe('Ingredient Parser', function(){
       '1 tablespoon chicken bouillon granules': {
         amount: '1',
         unit: 'Tablespoon',
-        name: 'chicken boullon granules'
+        name: 'chicken bouillon granules'
       },
       '4 fresh poblano chilies': {
         amount : '4',
@@ -710,7 +710,7 @@ describe('Ingredient Parser', function(){
       },
       '1/4 cup fish sauce': {
         amount: '1/4',
-        prep: 'Cup',
+        unit: 'Cup',
         name: 'fish sauce'
       },
       '1 tablespoon minced garlic cloves (from 6 to 8 medium cloves)': {
