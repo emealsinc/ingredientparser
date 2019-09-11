@@ -586,7 +586,7 @@ describe('Ingredient Parser', function(){
       '1 bunch green onions, chopped': {
         amount: '1',
         unit: 'Bunch',
-        name: 'onions',
+        name: 'green onions',
         prep: 'chopped'
       },
       '8 sprigs fresh parsley': {
@@ -618,8 +618,7 @@ describe('Ingredient Parser', function(){
       },
       '10 (6 inch) corn tortillas': {
         amount: '10',
-        name: 'corn tortillas',
-        prep: '6 inch'
+        name: 'corn tortillas'
       },
       '1 cup shredded mozzarella cheese': {
         amount: '1',
@@ -679,7 +678,7 @@ describe('Ingredient Parser', function(){
       '1/3 cup sour cream ($0.56)	': {
         amount: '1/3',
         unit: 'Cup',
-        name: 'source cream'
+        name: 'sour cream'
       },
       '2 oz. queso fresco* ($0.40)		': {
         amount: '2',
