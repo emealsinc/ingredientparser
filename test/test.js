@@ -634,7 +634,8 @@ describe('Ingredient Parser', function(){
       '½ Tbsp white sesame seeds (roasted/toasted) ((for topping))': {
         amount: '½',
         unit: 'Tablespoon',
-        name: 'white sesame seeds'
+        name: 'white sesame seeds',
+        prep: 'roasted/toasted) ((for topping)'
       },
       '4 Tbsp Korean soy sauce': {
         amount: '4',
@@ -644,12 +645,14 @@ describe('Ingredient Parser', function(){
       '3 Tbsp brown sugar ((don’t substitute with honey as it burns easily))': {
         amount: '3',
         unit: 'Tablespoon',
-        name: 'brown sugar'
+        name: 'brown sugar',
+        prep: '(don’t substitute with honey as it burns easily)'
       },
       '8 cloves garlic ((8 cloves = 4 tsp))': {
         amount: '8',
         unit: 'Clove',
-        name: 'garlic'
+        name: 'garlic',
+        prep: '(8 cloves = 4 tsp)'
       },
       '½  Asian pear ((half pear = 4 Tbsp))': {
         amount: '½',
@@ -657,7 +660,7 @@ describe('Ingredient Parser', function(){
       },
       'Freshly ground black pepper': {
         name: 'black pepper',
-        prep: 'Freshly ground'
+        prep: 'freshly ground'
       },
       '1 lb. boneless, skinless chicken breast ($3.99)': {
         amount: '1',
@@ -745,7 +748,7 @@ describe('Ingredient Parser', function(){
       '2    tomatoes, chopped (extra large tomatoes)': {
         amount: '2',
         name: 'tomatoes',
-        prep: 'chopped extra'
+        prep: 'chopped extra large tomatoes'
       },
       'salt': {
         name: 'salt'
