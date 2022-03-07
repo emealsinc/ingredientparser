@@ -785,6 +785,11 @@ describe('Ingredient Parser', function(){
         unit: 'Small',
         name: 'onion',
         prep: 'diced'
+      },
+      '1 ½ cups white wine': {
+        amount: '1½',
+        unit: 'Cup',
+        name: 'white wine'
       }
     };
 
