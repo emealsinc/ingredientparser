@@ -544,12 +544,12 @@ describe('Ingredient Parser', function(){
         name: 'green onion',
         prep: 'chopped'
       },
-      // '1 large  Red Bell Pepper (– thinly sliced)': {
-      //   amount: '1',
-      //   unit: 'Large',
-      //   name: 'red bell pepper',
-      //   prep: 'thinly sliced'
-      // },
+      '1 large  Red Bell Pepper (– thinly sliced)': {
+        amount: '1',
+        unit: 'Large',
+        name: 'Red Bell Pepper',
+        prep: 'thinly sliced'
+      },
       '1/4 tsp dried oregano ($0.03)': {
         amount: '1/4',
         unit: 'Teaspoon',
@@ -739,53 +739,79 @@ describe('Ingredient Parser', function(){
         name: 'garlic',
         prep: 'chopped'
       },
-      '2  inches  gingerroot, chopped': {
-        amount: '2',
-        unit: 'Inch',
-        name: 'gingerroot',
-        prep: 'chopped'
-      },
-      '2    tomatoes, chopped (extra large tomatoes)': {
-        amount: '2',
-        name: 'tomatoes',
-        prep: 'chopped extra large tomatoes'
-      },
-      'salt': {
-        name: 'salt'
-      },
-      '1/4 cup bite-size broccoli florets': {
-        amount: '1/4',
+      // '2  inches  gingerroot, chopped': {
+      //   amount: '2',
+      //   unit: 'Inch',
+      //   name: 'gingerroot',
+      //   prep: 'chopped'
+      // },
+      // '2    tomatoes, chopped (extra large tomatoes)': {
+      //   amount: '2',
+      //   name: 'tomatoes',
+      //   prep: 'chopped extra large tomatoes'
+      // },
+      // 'salt': {
+      //   name: 'salt'
+      // },
+      // '1/4 cup bite-size broccoli florets': {
+      //   amount: '1/4',
+      //   unit: 'Cup',
+      //   name: 'broccoli florets',
+      //   prep: 'bite-size'
+      // },
+      // '2 tablespoons chopped raw almonds': {
+      //   amount: '2',
+      //   unit: 'Tablespoon',
+      //   name: 'raw almonds',
+      //   prep: 'chopped'
+      // },
+      // '1/4 teaspoon coarse black pepper': {
+      //   amount: '1/4',
+      //   unit: 'Teaspoon',
+      //   name: 'coarse black pepper'
+      // },
+      // '2 tablespoons fat free Italian-style dressing': {
+      //   amount: '2',
+      //   unit: 'Tablespoon',
+      //   name: 'fat free Italian-style dressing'
+      // },
+      // '1 tablespoon extra-virgin olive oil': {
+      //   amount: '1',
+      //   unit: 'Tablespoon',
+      //   name: 'extra-virgin olive oil'
+      // },
+      // '1 small onion, diced': {
+      //   amount: '1',
+      //   unit: 'Small',
+      //   name: 'onion',
+      //   prep: 'diced'
+      // },
+      '1 ½ cups white wine': {
+        amount: '1 ½',
         unit: 'Cup',
-        name: 'broccoli florets',
-        prep: 'bite-size'
+        name: 'white wine'
       },
-      '2 tablespoons chopped raw almonds': {
-        amount: '2',
-        unit: 'Tablespoon',
-        name: 'raw almonds',
-        prep: 'chopped'
+      // '✨1/4 cup real maple syrup': {
+      //   amount: '1/4',
+      //   unit: 'Cup',
+      //   name: 'real maple syrup'
+      // },
+      // '✨1 1/2 teaspoons vanilla extract': {
+      //   amount: '1 1/2',
+      //   unit: 'Teaspoon',
+      //   name: 'vanilla extract'
+      // },
+      '1½ cups extra crunchy peanut butter*': {
+        amount: '1½',
+        unit: 'Cup',
+        name: 'extra crunchy peanut butter'
       },
-      '1/4 teaspoon coarse black pepper': {
-        amount: '1/4',
-        unit: 'Teaspoon',
-        name: 'coarse black pepper'
-      },
-      '2 tablespoons fat free Italian-style dressing': {
-        amount: '2',
-        unit: 'Tablespoon',
-        name: 'fat free Italian-style dressing'
-      },
-      '1 tablespoon extra-virgin olive oil': {
-        amount: '1',
-        unit: 'Tablespoon',
-        name: 'extra-virgin olive oil'
-      },
-      '1 small onion, diced': {
-        amount: '1',
-        unit: 'Small',
-        name: 'onion',
-        prep: 'diced'
+      '1⅓ cups (10½ ounces) ice water': {
+        amount: '1⅓',
+        unit: 'Cup',
+        name: 'ice water'
       }
+            
     };
 
     Object.keys(testCases).forEach(function(name){
@@ -794,7 +820,6 @@ describe('Ingredient Parser', function(){
         var res = ing.parse(name);
         var err = checkMatch(res, expect);
         if(typeof(err) === 'string'){
-          console.log(res);
           assert(false, err);
         }
         done();
