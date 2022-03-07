@@ -790,7 +790,19 @@ describe('Ingredient Parser', function(){
         amount: '1½',
         unit: 'Cup',
         name: 'white wine'
+      },
+      '✨1/4 cup real maple syrup': {
+        amount: '1/4',
+        unit: 'Cup',
+        name: 'real maple syrup'
+      },
+      '✨1 1/2 teaspoons vanilla extract': {
+        amount: '1 1/2',
+        unit: 'Teaspoon',
+        name: 'vanilla extract'
       }
+
+      
     };
 
     Object.keys(testCases).forEach(function(name){
