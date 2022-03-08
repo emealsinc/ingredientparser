@@ -192,7 +192,7 @@ describe('Ingredient Parser', function(){
       },
       '1 bottle ketchup': {
         amountMin: '1',
-        unit: 'Bottle',
+        package: 'Bottle',
         name: 'ketchup'
       },
       '2 teaspoons toasted sesame oil, divided': {
@@ -218,12 +218,6 @@ describe('Ingredient Parser', function(){
         prep: 'minced',
         name: 'garlic'
       },
-      // '1 (15.25 ounce) can whole kernel corn, drained': {
-      //   amountMin: '1',
-      //   unit: '15.25 ounce can',
-      //   prep: 'drained',
-      //   name: 'whole kernel corn'
-      // },
       '1 cup (190g) dried green lentils': {
         amountMin: '1',
         unit: 'Cup',
@@ -266,8 +260,7 @@ describe('Ingredient Parser', function(){
       },
       '2 garlic cloves, minced': {
         amountMin: '2',
-        unit: 'Cloves',
-        name: 'garlic',
+        name: 'garlic cloves',
         prep: 'minced'
       },
       '1/2 cup (120g) ketchup': {
@@ -329,8 +322,7 @@ describe('Ingredient Parser', function(){
       },
       '1 garlic clove, grated': {
         amountMin: '1',
-        unit: 'Clove',
-        name: 'garlic',
+        name: 'garlic clove',
         prep: 'grated'
       },
       '¼ pear, grated': {
@@ -646,12 +638,11 @@ describe('Ingredient Parser', function(){
         amountMin: '3',
         unit: 'Tablespoon',
         name: 'brown sugar',
-        prep: '(don’t substitute with honey as it burns easily)'
+        prep: '(dont substitute with honey as it burns easily)'
       },
       '8 cloves garlic ((8 cloves = 4 tsp))': {
         amountMin: '8',
-        unit: 'Clove',
-        name: 'garlic',
+        name: 'cloves garlic',
         prep: '(8 cloves = 4 tsp)'
       },
       '½  Asian pear ((half pear = 4 Tbsp))': {
@@ -810,7 +801,14 @@ describe('Ingredient Parser', function(){
         amountMin: '1⅓',
         unit: 'Cup',
         name: 'ice water'
-      }
+      },
+      '1 (15.25 ounce) can whole kernel corn, drained': {
+        amountMin: '1',
+        unit: '15.25 ounce',
+        package: 'can',
+        prep: 'drained',
+        name: 'whole kernel corn'
+      },
             
     };
 
