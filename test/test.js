@@ -604,7 +604,7 @@ describe('Ingredient Parser', function(){
         name: 'chicken bouillon granules'
       },
       '4 fresh poblano chilies': {
-        amount : '4',
+        amountMin: '4',
         name: 'poblano chilies',
         prep: 'fresh'
       },
@@ -680,15 +680,16 @@ describe('Ingredient Parser', function(){
         name: 'queso fresco'
       },
       '4 cups cooked rice for serving ($0.70)	': {
-        amount : '4',
+        amountMin: '4',
         unit: 'Cup',
         name: 'rice',
         prep: 'cooked'
       },
       'About 12 cups cold water, plus more as needed				': {
-        amountMin: '12',
+        amount: '12',
         unit: 'Cup',
-        name: 'cold water'
+        name: 'cold water',
+        prep: 'plus more as needed',
       },
       '8 ounces daikon radish, peeled and cut into 2-inch matchsticks			': {
         amountMin: '8',
@@ -710,7 +711,7 @@ describe('Ingredient Parser', function(){
         amountMin: '1',
         unit: 'Tablespoon',
         name: 'garlic cloves',
-        prep: 'minced'
+        prep: 'minced from 6 to 8 medium cloves'
       },
       '1/4 cup chopped green bell pepper': {
         amountMin: '1/4',
@@ -726,8 +727,7 @@ describe('Ingredient Parser', function(){
       },
       '8    garlic cloves, chopped': {
         amountMin: '8',
-        unit: 'Clove',
-        name: 'garlic',
+        name: 'garlic cloves',
         prep: 'chopped'
       },
       // '2  inches  gingerroot, chopped': {
@@ -804,8 +804,7 @@ describe('Ingredient Parser', function(){
       },
       '1 (15.25 ounce) can whole kernel corn, drained': {
         amountMin: '1',
-        unit: '15.25 ounce',
-        package: 'can',
+        package: 'Can',
         prep: 'drained',
         name: 'whole kernel corn'
       },
